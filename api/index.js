@@ -3,9 +3,12 @@ import cors from "cors";
 import multer from "multer";
 import groupdocs_conversion_cloud from "groupdocs-conversion-cloud";
 import fs from "fs";
+import dotenv from "dotenv";
 
-const client_id = "ed84a80a-c590-4454-a020-423905563d4c";
-const client_secret = "78e6e6543753cbbfeabe5df1766995dc";
+dotenv.config();
+
+const client_id = process.env.client_id || "ed84a80a-c590-4454-a020-423905563d4c";
+const client_secret = process.env.client_secret || "78e6e6543753cbbfeabe5df1766995dc";
 
 const app = express();
 app.use(cors({ maxAge: 6000 }));
