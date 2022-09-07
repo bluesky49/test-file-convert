@@ -1,0 +1,14 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  background-image: linear-gradient(to right, #2430E7 , #4a02cc);
+}
+.header-txt {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
